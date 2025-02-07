@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+}
+/* using for smooth scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container for consistent spacing */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px ;
+    background-color: #f4f4f4;
+    border: black solid;
+    overflow: hidden;
+   
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right,rgb(190, 49, 126), #2a9d8f);
+    color: rgb(26, 2, 2);
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    font-weight: light;
+}
+
+/* Navigation Section */
+nav {
+    background-color: #333;
+    color: rgb(10, 1, 21);
+    padding: 10px 0;
+}
+contact{
+    .box{
+        background-color: #333;
+        color: rgb(10, 1, 21);
+        padding: 10px 0;
+    }
+    background-color: #333;
+    color: rgb(10, 1, 21);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+/* using for nav button color and size */
+nav ul li a {
+    background-color:rgb(157, 210, 96); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+   
+}
+/* using for hower nav button */
+nav ul li a:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* image shaping */
+.image img {
+    transition: .5s ease;
+    width: 400px;
+    height: 300px;
+    }
+    /* image hower */
+    .image img:hover{
+    box-shadow: 0 0 0 10px #000000;
+    transition: .5s ease;
+    }
+
+.images img{
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+    border-radius: 100%;
+}
+
+.images img:hover{
+    opacity: 1;
+}
+
+
+
+
+
+/* About Me Section */
+.about-me {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.about-me h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+#button {
+    background-color: #0486aa; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+#button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+#contact-box form{
+    width: 95%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: rgb(18, 2, 2);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .post-title {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .container {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+
+    .post-title {
+        font-size: 1.5em;
+    }
+
+    .read-more {
+        font-size: 1em;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
